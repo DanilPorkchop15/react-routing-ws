@@ -1,7 +1,7 @@
 import { ENTITY_LIST } from "../../entities";
 import { useParams } from "react-router-dom";
 export const EntityPage: React.FC = () => {
-  const { entityId } = useParams();
+  const { entityId } = useParams<{entityId: string}>();
   const entity = ENTITY_LIST.find((entity) => entity.id === entityId);
   if (!entity) {
     return <div className="page">Entity not found</div>;
