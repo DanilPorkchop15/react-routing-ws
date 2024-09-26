@@ -20,6 +20,7 @@
 .App-header {
   background-color: #282c34;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -27,11 +28,17 @@
   height: 200px;
   gap: 20px;
 }
-
+.App-header-block {
+  display: flex;
+  gap: 20px;
+}
 .App-link {
   color: #61dafb;
 }
 
+.App-link-active {
+  color: #fb6194;
+}
 .page {
   flex-grow: 1;
   display: flex;
