@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ENTITY_LIST } from "../../entities";
 export const EntityListPage: React.FC = () => {
   return (
@@ -7,9 +7,9 @@ export const EntityListPage: React.FC = () => {
       <ul>
         {ENTITY_LIST.map((entity) => (
           <li key={entity.id}>
-            <NavLink to={`/entity/${entity.id}`}>
+            <Link to={`/entity/${entity.id}`}>
               {entity.name}
-            </NavLink>
+            </Link>
           </li>
         ))}
       </ul>
